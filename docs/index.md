@@ -1,25 +1,20 @@
-## Welcome to GitHub Pages
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-You can use the [editor on GitHub](https://github.com/Comp007/wordpress/edit/ck_website/docs/index.md) to maintain and preview the content for your website in Markdown files.
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
 
 **Bold** and _Italic_ and `Code` text
 
